@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedagogové | GML prototyp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="teachers-page" data-page-section="KDO JSME">
+
+  <div id="site-header"></div>
+
+  <main class="teachers-main">
+    
+    <section class="teachers-section">
+      <div class="container teachers-inner">
+      <h1 class="teachers-title">Pedagogové na Gymnáziu Matyáše Lercha</h1>
+      </div>
+      <section class="teachers-class-section">
+      <div class="container teachers-inner">
+
+        
+
+        <section class="teachers-accordion">
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>Třídní učitelé</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+
+            <div class="accordion-panel">
+              <div class="accordion-panel-inner">
+                <ul class="class-teachers-list">
+                  <li><strong>1.AV</strong> — Mgr. Jana Novotná</li>
+                  <li><strong>2.AV</strong> — Mgr. Petr Černý</li>
+                  <li><strong>3.AV</strong> — Mgr. et Mgr. Romana Borošová</li>
+                  <li><strong>1.BF</strong> — Mgr. Lucie Svobodová</li>
+                  <li><strong>2.BF</strong> — Ing. Aleš Jelínek</li>
+                  <li><strong>4.C</strong> — Mgr. Šárka Benešová</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <div class="container teachers-inner">
+<h2 class="teachers-subtitle"> Všichni učitelé</h2>
+        <div class="teachers-search">
+          <label for="teacher-search">Vyhledat v seznamu</label>
+          <input id="teacher-search" type="text" placeholder="Vepište jméno učitele">
+        </div>
+
+     <div class="teachers-list">
+
+  <a class="teacher-link" data-teacher="adolf">
+    Adolf Petr
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="ampapa">
+    Ampapa Pavel
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="barakova">
+    Baráková Marcela
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="bartak">
+    Barták Milan
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="benes">
+    Beneš Vojtěch
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="benesova">
+    Benešová Šárka
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="blaha">
+    Bláha Vladimír
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="blazek">
+    Blažek Pavel
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="bochnickova">
+    Bochníčková Eva
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="borosova">
+    Borošová Romana
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="broulik">
+    Broulík Aleš
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+  <a class="teacher-link" data-teacher="brunnova">
+    Brunnová Eva
+    <span class="teacher-hover">
+      <span class="teacher-icon">🔍</span>
+      <span class="teacher-hint">detail pedagoga</span>
+    </span>
+  </a>
+
+</div>
+
+      </div>
+    </section>
+</div>
+    <div id="teacherModal" class="teacher-modal">
+  <div class="teacher-modal-content">
+
+    <button class="teacher-close">✕</button>
+
+    <h2 id="teacherName"></h2>
+
+    <div class="teacher-info">
+      <p><strong>Aprobace:</strong> <span id="teacherSubject"></span></p>
+      <p><strong>Kabinet:</strong> <span id="teacherRoom"></span></p>
+      <p><strong>Email:</strong> <span id="teacherEmail"></span></p>
+      <p><strong>Telefon:</strong> <span id="teacherPhone"></span></p>
+      <p><strong>Třídnictví:</strong> <span id="teacherClass"></span></p>
+    </div>
+
+  </div>
+</div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
